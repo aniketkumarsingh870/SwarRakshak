@@ -64,8 +64,12 @@ logs/*.csv
 # Model files
 # =========================================
 
-models/*.pkl
-models/*.joblib
+# Ignore all model files first
+models/*
+
+# But keep the trained SwarRakshak model
+!models/swarrakshak_model.pkl
+!models/swarrakshak_scaler.pkl
 
 # =========================================
 # Streamlit
